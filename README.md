@@ -1,116 +1,268 @@
-# CSC 4717 — Web Technologies-I (Frontend Starter)
+# MiniHelpDesk
 
-This repository is the **official frontend starter template** for **CSC 4717 Web Technologies-I**.
+A simple Help Desk Ticket Management System built using React, TypeScript, Express, and MongoDB.
 
-You will use this starter to:
+## Group Information
 
-- set up your development environment (Week 1),
-- complete weekly milestone assignments,
-- and continuously build your project into a **final polished version** for presentation.
+**Course:** Web Technologies I
+**Project Title:** MiniHelpDesk
+**Group Number:** 13
 
----
+### Group Members
 
-## What’s inside (Frontend Tech Stack)
-
-- **Vite** — fast development server + build tool  
-  https://vitejs.dev/
-- **React** — UI library  
-  https://react.dev/
-- **TypeScript** — type-safe JavaScript  
-  https://www.typescriptlang.org/
-- **CSS Modules** — scoped component styling (`*.module.css`)  
-  https://github.com/css-modules/css-modules
-- **pnpm** — package manager  
-  https://pnpm.io/
-- **ESLint** — code quality and best practices  
-  https://eslint.org/
-- **Prettier** — code formatter (consistent style)  
-  https://prettier.io/
+* Student Name 1 (Roll No.)
+* Student Name 2 (Roll No.)
+* Student Name 3 (Roll No.)
 
 ---
 
-## Before you start (Windows)
+# Project Description
 
-### Required installs
+MiniHelpDesk is a web application that helps users create and manage support tickets.
 
-1. **Node.js (LTS)**
+The system allows users to:
 
-- Download and install the LTS version from:
-  https://nodejs.org/
+* Create support tickets
+* View all tickets
+* Update ticket information
+* Delete tickets
+* Filter tickets by status
+* Track ticket statistics through a dashboard
+* Log in and log out of the system
 
-2. **pnpm** (install after Node.js)
-   Open **PowerShell** and run:
+The application uses a React frontend, an Express backend, and MongoDB for data storage.
 
-```bash
-npm i -g pnpm
+---
+
+# Technologies Used
+
+## Frontend
+
+* React
+* TypeScript
+* Vite
+* React Router DOM
+
+## Backend
+
+* Node.js
+* Express.js
+* TypeScript
+
+## Database
+
+* MongoDB
+
+---
+
+# Features
+
+## 1. Ticket Management
+
+Users can:
+
+* Create tickets
+* View tickets
+* Edit tickets
+* Delete tickets
+
+Each ticket contains information such as:
+
+* Title
+* Description
+* Status
+
+---
+
+## 2. Dashboard Summary
+
+The dashboard displays:
+
+* Total Tickets
+* Open Tickets
+* In Progress Tickets
+* Closed Tickets
+
+This provides a quick overview of the system.
+
+---
+
+## 3. Filter by Status (Product Feature)
+
+Users can filter tickets based on their status.
+
+Available filters:
+
+* All
+* Open
+* In Progress
+* Closed
+
+This makes ticket management easier and more organized.
+
+---
+
+## 4. Empty State Design (Engineering Feature)
+
+When there are no tickets available, the application displays:
+
+"No tickets found"
+
+This improves the user experience by providing meaningful feedback instead of showing an empty screen.
+
+---
+
+## 5. Delete Confirmation
+
+Before deleting a ticket, the system asks for confirmation to prevent accidental deletion.
+
+---
+
+## 6. Authentication (Bonus Feature)
+
+A simple login system has been implemented.
+
+### Demo Credentials
+
+Username:
+
+admin
+
+Password:
+
+1234
+
+### Authentication Features
+
+* Login page
+* Logout functionality
+* Protected access to the application
+* Session persistence using Local Storage
+
+---
+
+# Project Structure
+
+```text
+MiniHelpDesk
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── types
+│   │   └── App.tsx
+│   │
+│   └── package.json
+│
+├── backend
+│   ├── src
+│   │   ├── controllers
+│   │   ├── routes
+│   │   ├── models
+│   │   └── app.ts
+│   │
+│   └── package.json
+│
+├── README.md
+└── .gitignore
 ```
 
-3. **Git**
+# Installation and Setup
 
-- Download and install from:
-  https://git-scm.com/downloads
-
-4. **VS Code**
-
-- Download and install from:
-  https://code.visualstudio.com/
-
-### Required account
-
-- GitHub account (for submitting assignments)
-  https://github.com/
-
-## Check your installation (PowerShell)
+## Clone the Repository
 
 ```bash
-node -v
-pnpm -v
-git --version
+git clone <repository-url>
 ```
 
-## Getting started
-
-1. **Create your own repo from the course template**
-
-- Open the course starter repository on GitHub.
-
-- Click Use this template.
-
-- Name your repository according to your project (example: my-project-frontend).
-
-- Create the repository under your GitHub account.
-
-2. **Clone your repository**
+Move into the project directory:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+cd MiniHelpDesk
 ```
 
-3. **Install dependencies**
+---
+
+## Frontend Setup
+
+Navigate to the frontend folder:
 
 ```bash
-pnpm install
+cd frontend
 ```
 
-4. **Run the project**
+Install dependencies:
 
 ```bash
-pnpm dev
+npm install
 ```
 
-Vite will print a local URL (usually):
-- http://localhost:5173
-
-Open it in your browser.
-
-## Useful commands
+Start the development server:
 
 ```bash
-pnpm dev          # start development server
-pnpm build        # build for production
-pnpm preview      # preview production build locally
-pnpm lint         # run ESLint checks
-pnpm format       # format code using Prettier
-pnpm format:check # check formatting (no changes)
+npm run dev
 ```
+
+---
+
+## Backend Setup
+
+Navigate to the backend folder:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the backend server:
+
+```bash
+npm run dev
+```
+
+---
+
+## MongoDB Setup
+
+Ensure MongoDB is installed and running.
+
+Update the MongoDB connection string in the backend configuration if required.
+
+---
+
+# Screenshots
+
+Add screenshots of:
+
+1. Login Page
+2. Dashboard
+3. Ticket List
+4. Status Filter
+5. Empty State Screen
+
+---
+
+# Learning Outcomes
+
+This project demonstrates:
+
+* React component development
+* TypeScript usage
+* REST API development with Express
+* MongoDB integration
+* Routing in React
+* State management
+* Authentication concepts
+* User experience improvements
+
+---
+
+# Conclusion
+
+MiniHelpDesk is a simple ticket management system developed as part of the Web Technologies I course. The project demonstrates full-stack web development concepts using modern technologies and implements both the required Product Feature and Engineering Feature successfully.
