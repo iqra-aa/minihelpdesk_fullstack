@@ -10,9 +10,9 @@ A simple Help Desk Ticket Management System built using React, TypeScript, Expre
 
 ### Group Members
 
-* Student Name 1 (Roll No.)
-* Student Name 2 (Roll No.)
-* Student Name 3 (Roll No.)
+* Iqra 2312151
+* Farheen Zahra 2312149
+
 
 ---
 
@@ -239,12 +239,11 @@ Update the MongoDB connection string in the backend configuration if required.
 # Screenshots
 
 Add screenshots of:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e09e4639-0e47-4e7d-9e30-7717af133efb" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/64be3aa2-26a3-4dca-88a0-f2d28d3af31b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8634f550-eb7b-42f1-90b6-8297ba0b6cb9" />
 
-1. Login Page
-2. Dashboard
-3. Ticket List
-4. Status Filter
-5. Empty State Screen
+
 
 ---
 
