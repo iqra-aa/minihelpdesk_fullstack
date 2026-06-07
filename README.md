@@ -1,171 +1,116 @@
-# MiniHelpDesk
+# CSC 4717 — Web Technologies-I (Frontend Starter)
 
-## Project Overview
+This repository is the **official frontend starter template** for **CSC 4717 Web Technologies-I**.
 
-MiniHelpDesk is a web-based ticket management system developed as part of the BSCS Web Technologies I Final Project.
+You will use this starter to:
 
-The system allows users to create, view, filter, and manage support tickets efficiently through a modern web interface connected to a MongoDB database.
-
----
-
-## Group Information
-
-**Group Number:** 13
-
-**Project Title:** MiniHelpDesk
+- set up your development environment (Week 1),
+- complete weekly milestone assignments,
+- and continuously build your project into a **final polished version** for presentation.
 
 ---
 
-## Technologies Used
+## What’s inside (Frontend Tech Stack)
 
-### Frontend
-
-* React
-* TypeScript
-* Vite
-* React Router DOM
-
-### Backend
-
-* Node.js
-* Express.js
-* TypeScript
-
-### Database
-
-* MongoDB
+- **Vite** — fast development server + build tool  
+  https://vitejs.dev/
+- **React** — UI library  
+  https://react.dev/
+- **TypeScript** — type-safe JavaScript  
+  https://www.typescriptlang.org/
+- **CSS Modules** — scoped component styling (`*.module.css`)  
+  https://github.com/css-modules/css-modules
+- **pnpm** — package manager  
+  https://pnpm.io/
+- **ESLint** — code quality and best practices  
+  https://eslint.org/
+- **Prettier** — code formatter (consistent style)  
+  https://prettier.io/
 
 ---
 
-## Features
+## Before you start (Windows)
 
-### Core Features
+### Required installs
 
-#### 1. Create Ticket
+1. **Node.js (LTS)**
 
-Users can create new support tickets with relevant information.
+- Download and install the LTS version from:
+  https://nodejs.org/
 
-#### 2. View Tickets
-
-All created tickets are displayed on the dashboard.
-
-#### 3. Delete Ticket
-
-Users can remove tickets from the system.
-
-#### 4. Dashboard Summary
-
-The dashboard displays:
-
-* Total Tickets
-* Open Tickets
-* In Progress Tickets
-* Closed Tickets
-
----
-
-## Product Feature
-
-### Filter by Status
-
-Users can filter tickets according to their status:
-
-* All
-* Open
-* In Progress
-* Closed
-
-This feature improves usability and helps users quickly find relevant tickets.
-
----
-
-## Engineering Feature
-
-### Empty State Design
-
-When no tickets are available, the system displays a user-friendly message:
-
-"No tickets found"
-
-This improves the user experience and provides clear feedback.
-
----
-
-## Additional Features
-
-### Delete Confirmation
-
-Before deleting a ticket, the user is asked for confirmation to prevent accidental deletions.
-
-### Ticket Count Display
-
-The system displays the number of tickets currently visible.
-
----
-
-## Bonus Feature: Authentication Flow
-
-A simple authentication system has been implemented.
-
-### Login Credentials
-
-Username: admin
-
-Password: 1234
-
-### Authentication Features
-
-* Login Page
-* Logout Button
-* Protected Application Access
-* Local Storage Session Persistence
-
----
-
-## Project Structure
-
-Frontend:
-
-src/
-
-* components/
-* pages/
-* types/
-* App.tsx
-
-Backend:
-
-server/
-
-* controllers/
-* routes/
-* models/
-* app.ts
-
----
-
-## How to Run the Project
-
-### Frontend
+2. **pnpm** (install after Node.js)
+   Open **PowerShell** and run:
 
 ```bash
-npm install
-npm run dev
+npm i -g pnpm
 ```
 
-### Backend
+3. **Git**
+
+- Download and install from:
+  https://git-scm.com/downloads
+
+4. **VS Code**
+
+- Download and install from:
+  https://code.visualstudio.com/
+
+### Required account
+
+- GitHub account (for submitting assignments)
+  https://github.com/
+
+## Check your installation (PowerShell)
 
 ```bash
-npm install
-npm run dev
+node -v
+pnpm -v
+git --version
 ```
 
-### Database
+## Getting started
 
-Ensure MongoDB is running and properly connected.
+1. **Create your own repo from the course template**
 
----
+- Open the course starter repository on GitHub.
 
-## Conclusion
+- Click Use this template.
 
-MiniHelpDesk demonstrates the implementation of modern web development concepts including React, TypeScript, Express, MongoDB, routing, authentication, filtering, and user experience enhancements.
+- Name your repository according to your project (example: my-project-frontend).
+
+- Create the repository under your GitHub account.
+
+2. **Clone your repository**
+
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+
+3. **Install dependencies**
+
+```bash
+pnpm install
+```
+
+4. **Run the project**
+
+```bash
+pnpm dev
+```
+
+Vite will print a local URL (usually):
+- http://localhost:5173
+
+Open it in your browser.
+
+## Useful commands
+
+```bash
+pnpm dev          # start development server
+pnpm build        # build for production
+pnpm preview      # preview production build locally
+pnpm lint         # run ESLint checks
+pnpm format       # format code using Prettier
+pnpm format:check # check formatting (no changes)
+```
